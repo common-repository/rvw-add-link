@@ -1,0 +1,143 @@
+#add-link-button span {	
+	border: 1px solid #a0a0a0;
+	margin-left: -4px;
+	margin-right: 6px;
+	background-image: url("images/add-link.png");
+    background-size: 16px 16px;
+	}
+.link-post-type, #link-custom-header, #link-menu-header {
+	background-color:#ffffff;
+	display:block; 
+	width:100%;
+	text-align:left;
+	border:1px solid #d0d0d0;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #A0A0A0;
+	position: relative;
+	}
+#custom-link-box textarea {
+	width: 100%;
+	}
+#insert-media-button {
+	float:left
+	}	
+.link-post, .link-menu {
+	background-color:#ffffff;
+	display:block; 
+	width:100%;
+	text-align:left;
+	border:none;
+	cursor: pointer;
+	margin-left: 12px;
+	line-height: 24px;
+	margin-bottom: 4px;
+	}
+
+/* .link-button {	
+	border:1px solid #000000;
+	background-color: #e0e0e0;
+	border-radius:10px;
+	padding-left:8px;
+	padding-right:8px;
+	margin-left:8px;
+	font-size:90%;	
+	cursor: pointer;
+	} */
+#link-dialog {
+	overflow-y: scroll;
+	}
+.link-dropdown span {
+	display: inline-block;
+	}
+.filter-div {
+	/* border:1px solid red; */
+	width:120px;
+	float: right;
+    margin-bottom: -6px;
+    margin-top: -4px;
+	}	
+.filter-box {
+	margin: 0;
+	float:right;
+	}	
+.ui-accordion .ui-accordion-content {
+	padding:0;
+	overflow: visible;
+	}
+.ui-accordion-header {
+	overflow:hidden;
+	}	
+.link-icon-search {
+	background: url(images/search-icon2.png);
+	width: 24px;
+	height: 24px;
+	border-top: 1px solid #A0A0A0;
+	border-right: 1px solid #A0A0A0;
+	border-bottom: 1px solid #A0A0A0;
+    vertical-align: bottom;
+    float:right
+	}
+#loading {
+	display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    margin: auto;	
+    z-index: 100;
+	}
+.downarrow {
+   height: 0;
+   width: 0;
+   clear:both;
+   float: right;
+   margin-top:4px;
+   border: 10px solid transparent;
+   border-top-color: #a0a0a0;
+	}	
+.uparrow {
+   height: 0;
+   width: 0;
+   clear:both;
+   float: right;
+   margin-top: -4px;
+   border: 10px solid transparent;
+   border-bottom-color: #a0a0a0;
+	}
+#link-url-error {
+	color:red;
+	}
+#link-test-link a {
+	background-color:#aed3fd;
+	}
+.link-blue-highlight {
+	background-color: #aed3fd;
+	padding-right:12px;
+	border-bottom-right-radius:12px;
+	border-top-right-radius:12px;	
+	}
+.ui-autocomplete li {
+	white-space: normal;
+	}
+
+/* added to sort out problems with upgrade to Wordpress 3.6  
+ * Wordpress 4.00 - editor tools seems to have z-index 1000
+ * Give my dialog z-index > 1000
+ */
+.ui-widget-overlay {
+	background:none;
+}
+.ui-widget-overlay.ui-front {
+	background-color: #000000;
+	/* z-index: 90;  */
+	z-index: 1009; 
+	opacity:0.3;
+}
+.ui-dialog {
+	z-index: 1010;
+}	
